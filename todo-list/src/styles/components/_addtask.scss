@@ -1,0 +1,17 @@
+textarea {
+    position: absolute;
+    margin-top: 22rem;
+    left: 35.5%;
+    background-color: transparent;
+    height: 70px;
+    width: 600px;
+    border: 1px solid $color-1;
+    border-radius: 30px;
+    color: $color-4;
+    font-family: $font-2;
+    font-size: 20px;
+    padding: 20px 40px;
+    box-shadow: 
+                -15px -15px 20px $color-2,
+                15px 15px 20px $color-3;
+}

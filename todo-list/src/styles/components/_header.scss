@@ -1,0 +1,20 @@
+.heading {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    height: 120px;
+    width: 620px;
+    padding: 15px 42px;
+    border: 6px solid $color-1;
+    border-radius: 30px;
+    box-shadow: 
+                -15px -15px 20px $color-2,
+                15px 15px 20px $color-3;
+}
+
+h1 {
+    font-size: 3.4rem;
+    font-weight: 200;
+    letter-spacing: 0.4em;
+}
+
