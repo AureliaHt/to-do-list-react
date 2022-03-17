@@ -1,0 +1,34 @@
+.deleteTask {
+    position: relative;
+    margin-top: 0rem;
+    margin-left: 42rem;
+    height: 70px;
+    width: 70px;
+    background-color: transparent;
+    border-radius: 45%;
+    border: 2px solid $color-1;
+    color: #f6580f;
+    font-size: 28px;
+    padding: 20px;
+    -webkit-appearance: none;
+    box-shadow: 
+            -15px -15px 20px $color-2,
+            15px 15px 20px $color-3;
+    outline: none;
+    cursor: pointer;
+    transform: translate(-50%, -59%);
+}
+
+.deleteTask:active::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -1%;
+    left: -1%;
+    border-radius: 45%;
+    border: 1px solid $color-1;
+    box-shadow: 
+            inset 15px 15px 20px $color-3,
+            inset -15px -15px 20px $color-2;
+}

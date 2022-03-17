@@ -1,11 +1,11 @@
 import Header from "./components/Header";
-import AddTask from "./components/AddTask";
+import List from "./components/List";
 
 const App = () => {
   return (
     <div>
       <Header />
-      <AddTask />
+      <List />
     </div>
   );
 };

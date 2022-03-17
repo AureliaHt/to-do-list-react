@@ -1,7 +1,7 @@
 import { useState } from "react";
-import {ImPlus} from "react-icons/im";
+import {ImWink} from "react-icons/im";
 
-const AddTask = (props) => {
+const EditTask = (props) => {
     const [inputValue, setInputValue] = useState('');
 
     const handleSubmit = e => {
@@ -20,9 +20,9 @@ const AddTask = (props) => {
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
-                    classname="addTask"
+                    className="editTask"
                     name="text"
-                    placeholder="Add a task ..."
+                    placeholder="Edit your task ..."
                     autoComplete="off"
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
@@ -30,12 +30,12 @@ const AddTask = (props) => {
                 </input>
                 <button
                     type="submit"
-                    className="addButton">
-                    <ImPlus />
+                    className="editButton">
+                    <ImWink />
                 </button>
             </form>
         </div>
     );
 };
 
-export default AddTask;
+export default EditTask;
