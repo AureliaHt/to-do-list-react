@@ -1,8 +1,10 @@
 import AddTask from "./AddTask";
 import UpdateTask from "./UpdateTask";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import {ThemeColorContext} from "./context/ThemeContext";
 
 const List = () => {
+    const {color} = useContext(ThemeColorContext);
     const [newInputValue, setNewInputValue] = useState([]);
 
     const addNewTask = todo => {
