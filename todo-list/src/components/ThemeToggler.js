@@ -6,9 +6,7 @@ import ThemeColors from "./context/ThemeContext";
 const ThemeToggler = (props) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
-    const handleClick = e => {
-        e.preventDefault();
-
+    const handleClick = () => {
         setDropdownOpen(!dropdownOpen);
     };
 
